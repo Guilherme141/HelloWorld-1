@@ -15,6 +15,13 @@
 
     $total_colunas = mysqli_num_rows($result);
 
+    $row = mysqli_fetch_array($result, MYSQLI_BOTH);
+        $_SESSION['idUsuario'] = $row[0];
+        $_SESSION['nomeUsuario'] = $row[1];
+        $_SESSION['emailUsuario'] = $row[2];
+
+    
+
     if($total_colunas != 0 ){
         $_SESSION['usuario'] = $email;
         header("Location:painel.php");
