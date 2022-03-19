@@ -1,5 +1,8 @@
 <!--Uma modificação para deixar o código mais polido-->
-<?php include '../includes/head.php'?>
+<?php include 
+    '../includes/head.php';
+    error_reporting(0);
+?>
 
     <link rel="stylesheet" href="../css/form-cadastrar.css">
     <title>Cadastrar Conta</title>

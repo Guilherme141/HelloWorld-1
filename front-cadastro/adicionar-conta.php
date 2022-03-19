@@ -1,5 +1,7 @@
 <!--Uma modificação para deixar o código mais polido-->
-<?php include '../includes/head.php'?>
+<?php 
+    include '../includes/head.php';
+?>
 
     <link rel="stylesheet" href="../css/adicionar-conta.css">
     <title>My Book</title>
@@ -10,19 +12,19 @@
     <div class="background-adicionar-conta">
         <div class="adicionar-conta">
             <h1>Adicionar conta</h1>
-            <form action="">
-                <p class="ajuste-texto-nome">nome</p>
-                <input type="text">
-                <p class="ajuste-texto-senha">senha</p>
-                <input id="senha" type="password">
+            <form action="../session/session-usuario.php" method="POST">
+                <p class="ajuste-texto-nome">Email</p>
+                <input type="text" name="txtEmail">
+                <p class="ajuste-texto-senha">Senha</p>
+                <input id="senha" type="password" name="txtSenha">
                     <div class="mostra-senha">
                         <input type="checkbox" onClick="mostraSenha()">
-                        <p>mostrar senha</p>
+                        <p>Mostrar senha</p>
                     </div>
                 <input class="botao" type="submit" value="Entrar">
             </form>
         </div>
-        <p>não tem uma conta?  <a href="form-cadastrar.php">Criar nova conta</a></p>
+        <p>Não tem uma conta?  <a href="form-cadastrar.php">Criar nova conta</a></p>
     </div>
     <script>
         function mostraSenha(){

@@ -2,9 +2,8 @@
     require_once ('../classe/Usuario.php');
     require_once ('../classe/Conexao.php');
 
-    include '../classe/conexao_mysqli.php';
-    
-    // instanciando um objeto
+    include '../classe/conexao-mysqli.php';
+
     $email = $_POST['txtEmail'];
 
     $sql = "SELECT * FROM tbusuario WHERE emailUsuario = '$email'";
