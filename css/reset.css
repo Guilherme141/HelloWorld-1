@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --cor-da-navbar:#150F40;
+    --cor-da-navbar-lateral:#150F40;
+    --cor-do-botao:rgb(25, 106, 255);
+    --cor-do-botao-ativo:rgb(17, 79, 194);
+    --background-conta:url(https://www.10wallpaper.com/wallpaper/2560x1600/1802/Blue_gray_gradient_abstract_vector_2560x1600.jpg);
+    --background-senha:linear-gradient(to top left,#76b2b2,#3D8EC2);
+    --decoracao-background:rgb(0, 71, 119);
+    --background-index:rgb(0, 71, 119);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none;
+}
+body{
+    overflow-x:hidden;
+}
+
+.botao{
+    transition: all 0.8s;
+    border-radius:5px;
+    border:none;
+    background-color:var(--cor-do-botao);
+    color:white;
+    padding:10px;
+    box-shadow: inset 0 0 0 0  var(--cor-do-botao-ativo);
+
+    
+}
+.botao:hover{
+    box-shadow: inset 500px 0 0 0 var(--cor-do-botao-ativo);
+}

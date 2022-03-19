@@ -1,0 +1,90 @@
+
+.background-adicionar-conta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        background:var(--background-conta);
+        background-size:cover;
+        height:100vh;
+        color:white;
+}
+
+.adicionar-conta{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    border: black 2px solid;
+    border-radius:5px;
+    background:var(--background-senha);
+    width:350px;
+    height:350px;
+}
+.adicionar-conta h1{
+    font-size:1.4rem;
+}
+.ajuste-texto-nome{
+    position:relative;
+    left:-30%;
+}
+.ajuste-texto-senha{
+    position:relative;
+    left:-30%;
+}
+
+.mostra-senha{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+
+   position: relative;
+   left:-10%;
+}
+.mostra-senha p{
+    margin-left:10px;
+    margin-bottom:7px;
+}
+
+.background-adicionar-conta form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background-adicionar-conta p{
+    line-height:2;
+    margin-top:10px;
+    font-size:1rem;
+}
+.background-adicionar-conta input[type=text],input[type=password]{
+    border:solid 2px black;
+    outline:none;
+    padding:2px;
+    width:80%;
+    font-size:1rem;
+}
+.background-adicionar-conta input[type=checkbox] {
+    transform: scale(1.1,1.1);
+}
+.background-adicionar-conta input[type=submit]{
+    border:none;
+    color:white;
+    font-size:1.1rem;
+    padding:10px;
+    width:100px;
+    cursor:pointer;
+}
+
+.background-adicionar-conta a{
+    text-decoration: none;
+    color:rgb(43, 189, 226);
+}
+.background-adicionar-conta a:hover{
+    color:blue;
+}

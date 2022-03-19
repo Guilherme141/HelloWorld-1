@@ -1,0 +1,93 @@
+.background-do-cadastro-professor{
+    background-image:url(https://www.univates.br/eventos//media/alugue/salas_aula/salaaula_04.jpg);
+    background-size:cover;
+    height:100vh; 
+}
+.blur{
+    backdrop-filter:blur(7px);
+    width:100vw;
+    height:100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-cadastro{
+    font-size:1.4rem;
+    letter-spacing:2px;
+    margin:20px 0px;
+    
+}
+.form-do-cadastro-professor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    width:500px;
+    height:500px;
+    background:var(--background-senha);
+    border:solid 3px black;
+    border-radius:5px;
+}
+
+.form-do-cadastro-professor input[type=text],input[type=password]{
+    border-radius:5px;
+    border:solid 2px black;
+    outline:none;
+    padding:5px;
+    width:50%;
+    font-size:1rem;
+}
+.form-do-cadastro-professor p{
+    line-height:2;
+    margin-top:5px;
+    font-size:1.1rem;
+}
+
+input[type=submit]{
+    border:none;
+    color:white;
+    font-size:1.1rem;
+    padding:10px;
+    width:100px;
+}
+
+.botao{
+    position:relative;
+    top:2.5%;
+}
+
+input[type=checkbox] {
+    transform: scale(1.1);
+}
+.mostra-senha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position:relative;
+    left:-10%;
+}
+#mostra-senha{
+    margin-right:10px;
+}
+
+.nome-p{
+    position:relative;
+    left:-12%;
+}
+.email-p{
+    position:relative;
+    left:-20%;
+}
+.senha-p{
+    position:relative;
+    left:-20%;
+}
+.confirmar-p{
+    position:relative;
+    left:-12%;
+}
