@@ -1,21 +1,25 @@
 <?php
-    include("../classe/Conexao.php");
+    include("../classe/conexao-mysqli.php");
     session_start();
 
-    $_SESSION['idUsuario'];
 
-    $conexao=Conexao::pegarConexao();
-    header ("Location: ../session/session-index-usuario.php");
-
+    $id = $_SESSION['idUsuario'];
     $nomeTurma = $_POST['nomeTurma'];
     $descTurma = $_POST['descTurma'];
     $siglaTurma = $_POST['siglaTurma'];
     $semestreTurma = $_POST['semestreTurma'];
+    
+    if ($nomeTurma != ""){
+        header ("Location: ../session/session-index-usuario.php");
+        $sql = "INSERT INTO tbturma (siglaTurma, semestreTurma, idUsuario,nomeTurma, descTurma)
+                VALUES ('$siglaTurma', '$semestreTurma', '$id', '$nomeTurma', '$descTurma')";
+    
+        $result = mysqli_query($mysqli_conexao, $sql);
+    }
+    else{
+        header ("Location: ../session/session-index-usuario.php");
+    }
 
-    #ARRUMAR ISSO
-    $queryInsert = "INSERT INTO tbTurma (siglaTurma, semestreTurma, idUsuario, idAula, idAtividade,nomeAula)";
-
-    $conexao->exec($queryInsert);
 
 
 ?>
