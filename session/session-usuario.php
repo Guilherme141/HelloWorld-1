@@ -2,6 +2,17 @@
     session_start();
     include '../classe/conexao-mysqli.php';
 
+    #INICIAR O CÓDIGO DA AREA RESTRITA DENTRO DESSE IF
+    if($_POST['txtEmail'] == "adm" and $_POST['txtSenha'] == md5("123")){
+        header("Location:area-restrita.php");
+    }
+
+
+
+
+
+
+    
     #VERIFICANDO SE OS CAMPOS NÃO ESTÃO VAZIOS
     if(empty($_POST['txtEmail'] || empty($_POST['txtSenha']))){
         header("Location:../front-cadastro/adicionar-conta.php");
