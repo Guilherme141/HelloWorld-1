@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Mar-2022 às 21:06
+-- Tempo de geração: 20-Mar-2022 às 05:21
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -29,24 +29,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbusuario` (
   `idUsuario` int(11) NOT NULL,
-  `nomeUsuario` varchar(255) DEFAULT NULL,
-  `emailUsuario` varchar(255) DEFAULT NULL,
-  `senhaUsuario` varchar(255) DEFAULT NULL
+  `nomeUsuario` varchar(200) DEFAULT NULL,
+  `emailUsuario` varchar(200) DEFAULT NULL,
+  `loginUsuario` varchar(200) DEFAULT NULL,
+  `senhaUsuario` varchar(200) DEFAULT NULL,
+  `idTipoUsuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `tbusuario`
 --
 
-INSERT INTO `tbusuario` (`idUsuario`, `nomeUsuario`, `emailUsuario`, `senhaUsuario`) VALUES
-(1, 'Nilton', 'nilton@gmail.com', '123'),
-(2, 'Nycolas', 'nycolas@outlook.com', '123'),
-(3, '', '', ''),
-(4, '', '', ''),
-(5, '', '', ''),
-(6, 'Nilton', 'nilton@gmail.com', '123'),
-(7, 'Ana', 'ana@outlook.com', '321'),
-(8, 'Nilton', 'ana@outlook.com', '123');
+INSERT INTO `tbusuario` (`idUsuario`, `nomeUsuario`, `emailUsuario`, `loginUsuario`, `senhaUsuario`, `idTipoUsuario`) VALUES
+(1, 'Nilton Gabriel', 'nilton@gmail.com', NULL, '202cb962ac59075b964b07152d234b70', NULL),
+(2, 'Guilherme', 'gui@hotmail.com', NULL, '202cb962ac59075b964b07152d234b70', NULL),
+(3, 'Nareba do Fuleco', 'fuleco@gmail.com', NULL, '202cb962ac59075b964b07152d234b70', NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -56,7 +53,8 @@ INSERT INTO `tbusuario` (`idUsuario`, `nomeUsuario`, `emailUsuario`, `senhaUsuar
 -- Índices para tabela `tbusuario`
 --
 ALTER TABLE `tbusuario`
-  ADD PRIMARY KEY (`idUsuario`);
+  ADD PRIMARY KEY (`idUsuario`),
+  ADD KEY `idTipoUsuario` (`idTipoUsuario`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -66,7 +64,17 @@ ALTER TABLE `tbusuario`
 -- AUTO_INCREMENT de tabela `tbusuario`
 --
 ALTER TABLE `tbusuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `tbusuario`
+--
+ALTER TABLE `tbusuario`
+  ADD CONSTRAINT `tbusuario_ibfk_1` FOREIGN KEY (`idTipoUsuario`) REFERENCES `tbtipousuario` (`idTipoUsuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
