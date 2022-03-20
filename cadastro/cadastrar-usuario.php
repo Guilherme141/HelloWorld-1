@@ -5,7 +5,7 @@
     include '../classe/conexao-mysqli.php';
 
     $email = $_POST['txtEmail'];
-
+    
     $sql = "SELECT * FROM tbusuario WHERE emailUsuario = '$email'";
     $result = mysqli_query($mysqli_conexao , $sql);
 
