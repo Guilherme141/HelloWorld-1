@@ -10,7 +10,7 @@
     $semestreTurma = $_POST['semestreTurma'];
     
     if ($nomeTurma != ""){
-        header ("Location: ../session/session-index-usuario.php");
+        header ("Location: ../session/index-logado.php");
         $sql = "INSERT INTO tbturma (siglaTurma, semestreTurma, idUsuario,nomeTurma, descTurma)
                 VALUES ('$siglaTurma', '$semestreTurma', '$id', '$nomeTurma', '$descTurma')";
     

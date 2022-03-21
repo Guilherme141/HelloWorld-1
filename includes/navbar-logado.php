@@ -41,7 +41,7 @@
         <div class="links-agupados">
             <a class="link"href="#">Agenda</a>
             <a class="link"href="#">Notas</a>
-            <a class="sair"href="../index/index.php">Sair</a>
+            <a class="sair"href="../session/logout.php">Sair</a>
         </div>
          
      </div>

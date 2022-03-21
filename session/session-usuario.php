@@ -40,7 +40,7 @@
     #VERIFICANDO SE O EMAIL E A SENHA EXISTEM NO BANCO
     if($total_colunas != 0 ){
         $_SESSION['usuario'] = $email;
-        header("Location:session-index-usuario.php");
+        header("Location:index-logado.php");
         exit();
     }
     else{
