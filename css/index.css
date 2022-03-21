@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
 
-    background-color: var(--cor-da-navbar);
+    background-color: var(--cor-secundaria);
     width:100%;
     height:450px;
     padding:50px 0;
@@ -39,7 +39,7 @@ body{
     transform: scale(1.3);
 }
 .primeira-apresentacao .img{
-    content:url(https://cdn.discordapp.com/attachments/934508254401298584/950904697873653841/unknown.png);
+    content:url(../imagens/aluno.png);
     transition:all .5s;
     background-color:#5B66A680;
     position:absolute;
@@ -70,8 +70,8 @@ body{
 }
 
 .apareceImg2{
-    content:url(https://blog.academia.com.br/wp-content/uploads/2019/02/273098-entenda-qual-e-o-papel-do-professor-na-educacao-dos-alunos.jpg);
+    content:url(../imagens/professora.jpg);
 }
 .apareceImg3{
-    content:url(https://www.remessaonline.com.br/blog/wp-content/uploads/2021/08/Dev.jpg.optimal.jpg);
+    content:url(../imagens/programador.jpg);
 }

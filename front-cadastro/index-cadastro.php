@@ -12,7 +12,7 @@
             <h1>Escolha uma conta</h1>
             <div class="contas">
                 <div class="conta">
-                    <a href=""><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">Conta 1</a>
+                    <a href="../index/index-logado.php"><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">Conta Funcional (PARA TESTE)</a>
                 </div>
                 <div class="conta">
                     <a href=""><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">Conta 2</a>
